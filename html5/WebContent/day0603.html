@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li>css</li>
+		<li>html</li>
+		<li>javascript</li>	
+	</ul>
+	
+	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+	<script>
+		$(function() {
+			$("ul").append("<li>jQuery</li>");
+			$("<li>appendTo</li>").appendTo("ul");
+			$("ul").prepend("<li>xml</li>");
+			$("<li>prependTo</li>").prependTo("ul");
+			$("<p>insertBefore</p>").insertBefore("ul");
+			$("ul").before("<p>before</p>");
+			$("ul").after("<p>after</p>");
+			$("<p>insertAfter</p>").insertAfter("ul");
+			$("li:eq(2)").appendTo("ul");
+			$("li:eq(2)").clone().prependTo("ul");
+			$("li:eq(3)").empty;
+			$("li:eq(3)").remove;
+		});
+	</script>
+
+</body>
+</html>

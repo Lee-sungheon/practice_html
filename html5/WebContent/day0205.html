@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Insert title here</title>
+		<style>
+		*{
+			magin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		
+		.menu > h3 {
+			color: blue;
+		}
+		
+		.menu .like {
+			color: red;
+		}
+		
+		.like + li {
+			background: yellow;
+		}
+		.like ~ li {
+			background: pink;
+		}
+		
+		#korea > li {
+			font-size: 20px;
+		}
+		
+		#korea >li:first-child {
+			color: blue;
+		}
+		#korea >li:last-child {
+			color: blue;
+		}
+		#America >li:nth-child(2) {
+			background: yellow;		/* 프로그래밍은 0부터 시작이지만 html은 1부터 시작 */
+		}
+		#America >li:nth-child(2n-1) {
+			color: olive;
+		}
+		#china >li:first-of-type {
+			color: purple;
+		}
+		
+		#Japan >li:nth-of-type(2) {
+			color: red;
+			font-style: italic;
+			font-weight: 900;	/* 폰트 굵기는 100~900 
+									고딕 : 300 / 세고딕 : 100 / 중고딕 : 500
+									견고딕 : 700 / 태고딕 : 900 									
+									*/
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li class="menu">
+				<h3>한식</h3>
+				<ul id="korea">
+					<li>김치찌개</li>
+					<li>된장찌개</li>
+					<li class="like">비빔밥</li>
+				</ul>
+			</li>
+			<li class="menu">
+				<h3>양식</h3>
+				<ul id="America">
+					<li class="like">파스타</li>
+					<li>피자</li>
+					<li>스테이크</li>
+				</ul>
+			</li>
+			<li class="menu">
+				<h3>중식</h3>
+				<ul id="China">
+					<li>짜장면</li>
+					<li>짬뽕</li>
+					<li class="like">탕수육</li>
+				</ul>
+			</li>
+			<li class="menu">
+				<h3>일식</h3>
+				<ul id="Japan">
+					<li>초밥</li>
+					<li class="like">우동</li>
+					<li>돈까스</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

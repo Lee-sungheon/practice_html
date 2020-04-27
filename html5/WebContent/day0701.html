@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+<style>
+	div.out {
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+	<div class="out">
+		<p>마우스이벤트
+	</div>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+	<script>
+		$(function() {
+			$("div.out").mouseover(function(e) {
+				let x = e.offsetX;
+				let y = e.offsetY;
+				$("p").text("mouse over : " + x + ", " + y);
+			});
+			$("div.out").mouseout(function() {
+				$("p").text("mouse out")
+			});
+			$("div.out").click(function() {
+				$("p").text("mouse click")
+			});
+			$("div.out").dblclick(function() {
+				$("p").text("mouse dblclick")
+			});
+			$("div.out").contextmenu(function() {
+				$("p").text("contextmenu")
+			});
+		});
+	</script>
+</body>
+</html>

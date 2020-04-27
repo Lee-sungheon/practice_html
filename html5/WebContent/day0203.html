@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Insert title here</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+		}
+		
+		div {
+			font-size: 30px;
+			width: 200px;		/*컨텐츠의 너비*/
+			height: 200px;		/*컨텐츠의 높이*/
+			line-height: 200px;
+			display: block;
+			text-align: left;
+		}
+		
+		#box1 {
+			background: orange;
+			padding: 30px 50px;		/*내부 여백*/
+			
+			/* 
+			padding, margin
+			1개 값을 입력하면 4개 범위 모두 적용
+			2개 값을 입력하면 첫 번째 값은 위와 아래, 두 번째 값은 오른쪽과 왼쪽 값이 됨
+			3개 값을 입력하면 첫 번째 값은 위, 두 번째 값은 오른쪽과 왼쪽, 세 번째 값은 아래
+			4개 값을 입력하면 상우하좌(시계 방향)으로 적용됨
+			padding-top: 30px; 상단 내부 여백
+			padding-right: 30px; 우측 내부 여백
+			padding-bottom: 30px; 하단 내부 여백
+			padding-left: 30px; 좌측 내부 여백
+			*/
+			
+			border: 10px outset red;  /*외곽선*/
+			/*
+			border
+			첫 번째 값은 선의 두께
+			두 번째 값은 선의 종류
+			세 번째 값은 선의 색상
+			3가지 값은 순서와 상관없이 사용할 수 있음
+			
+			border-color: red; 선의 색상
+			border-width: 1px; 선의 두께
+			border-style: solid; 선의 종류
+			각각의 속성을 지정해도 되고 border를 사용하여 한 번에 저장해도 됨
+			border-top: 1px solid red; 상단 외곽선
+			border-right: 1px solid red; 우측 외곽선
+			border-bottom: 1px solid red; 하단 외곽선
+			border-left: 1px solid red; 좌측 외곽선
+			border-top-color: blue; <- 조합도 가능
+			
+			외곽선의 종류
+			solid : 실선 / double : 두 줄 / dotted : 점선 / dashed : 끊어진 실선
+			/ groove / ridge / inset / outset 등
+			*/
+			border-style: inset;
+			margin: 50px;
+			box-sizing: border-box;
+		}
+		
+		#box2 {
+			background: pink;
+		}	
+		#box3 {
+			display: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="box1">box1</div>
+	<div id="box2">box2</div>
+	<div id="box3">box3</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Insert title here</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+			color: #333;	
+		}
+		
+		.nav>ul>li {
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			background: lightskyblue;
+			overflow: hidden;
+		}
+		.nav>ul>li:hover {
+			background: blue;
+			height: 200px;
+			transition: 0.3s;
+		}
+		.nav>ul>li:hover > h3 > a {
+			color: white;
+		}
+		
+		ul ul>li {
+			background: #9f9;
+		}
+		ul ul>li:hover {
+			background: #7c7;
+		}
+		.nav {
+			width: 800px;
+			margin: 0 auto;
+		}
+		
+		.radius {
+			clear: borh;
+			width: 300px;
+			height: 300px;
+			background: green;
+			border: 5px solid red;
+			/*border-radius: 50%;*/
+			border-radius: 30px 50px 70px 90px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li>
+				<h3><a href="#">한식</a></h3>
+				<ul>
+					<li><a href="#">비빔밥</a></li>
+					<li><a href="#">육회</a></li>
+					<li><a href="#">김치볶음밥</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3><a href="#">양식</a></h3>
+				<ul>
+					<li><a href="#">스테이크</a></li>
+					<li><a href="#">파스타</a></li>
+					<li><a href="#">피자</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3><a href="#">중식</a></h3>
+				<ul>
+					<li><a href="#">짜장면</a></li>
+					<li><a href="#">짬뽕</a></li>
+					<li><a href="#">탕수육</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3><a href="#">일식</a></h3>
+				<ul>
+					<li><a href="#">초밥</a></li>
+					<li><a href="#">돈까스</a></li>
+					<li><a href="#">우동</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="radius"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이징 예제</title>
+<style>
+	.container {
+		margin: 100px;
+	}
+	
+	.circle {
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		margin: 10px;
+		transform: translateX(200px);
+		}
+	}
+	
+	.circle0 {
+		background: orange;
+		transition: all 1.5s linear;
+	}
+	
+	.circle1 {
+		@extend .circle;
+		background: salmon;
+		transition: all 1.5s ease;
+	}
+	
+	.circle2 {
+		@extend .circle;
+		background: lightskyblue;
+		transition: all 1.5s ease-in;
+	}
+	
+	.circle3 {
+		@extend .circle;
+		background: khaki;
+		transition: all 1.5s ease-out;
+	}
+	
+	.circle4 {
+		@extend .circle;
+		background: yellow;
+		transition: all 1.5s ease-in-out;
+	}
+	
+	.circle5 {
+		@extend .circle;
+		background: thistle;
+		transition: all 1.5s cubic-bazier(0,1,.98,0);
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="circle">
+			<div class="circle0"></div>
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+			<div class="circle5"></div>
+		</div>
+	</div>
+</body>
+</html>

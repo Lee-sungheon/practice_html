@@ -1,0 +1,33 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+    a:hover {
+        color: red;
+    }
+    a:visited {
+        color: black;
+    }
+    a:active {
+        color: black;
+    }
+img {
+    display: block;
+    border: none;
+}
+ul {
+    padding: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Arial, Verdana;
+    color: black;
+    line-height: 24px;
+}

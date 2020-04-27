@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+<style>
+	div {
+		width: 200px;
+		height: 200px;
+		border: 5px solid red;
+		background: yellow;
+		text-align: center;
+		line-height: 200px;
+		font-size: 40px;
+		font-weight: 700;
+		position: absolute;		
+	}
+	
+	#box1 {
+		z-index: -999;
+	}
+	
+	#box2 {
+		top: 100px;
+		left: 100px;
+		background: pink;
+		z-index: 1000;
+	}
+	
+	#box3 {
+		top: 200px;
+		left: 200px;
+		background: aqua;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div id="box1">box1</div>
+	<div id="box2">box2</div>
+	<div id="box3">box3</div>
+</body>
+</html>
