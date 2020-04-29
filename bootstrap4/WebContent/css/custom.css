@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') 
+format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); 
+font-weight: normal; font-style: normal; }
+
+h1, h2, h3 ,h4 {
+	font-family: 'CookieRunOTF-Bold', sans-serif;
+	color: #039BE5;
+}
+
+body {
+	font-family: 'BMEULJIRO', sans-serif;
+	background-color: #E1F5FE;
+}
+
+.navbar {
+	border-bottom: #01579B 3px solid;
+}
