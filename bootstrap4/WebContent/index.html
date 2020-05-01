@@ -12,7 +12,7 @@
 <title>자기소개 웹사이트</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#">이성헌</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
@@ -23,45 +23,215 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Home
+				<li class="nav-item active"><a class="nav-link" href="#home">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> Blog </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">C언어</a> <a class="dropdown-item"
-							href="#">Java</a> <a class="dropdown-item" href="#">안드로이드</a>
-					</div></li>
+				<li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 			</ul>
 			<form class="form-inline ml-lg-auto">
 				<input class="form-control mr-2" type="search" placeholder="Search"
 					aria-label="search" />
-				<button class="btn btn-outline-success" type="submit">serach</button>
+				<button class="btn btn-outline-success" type="submit">Search</button>
 			</form>
 		</div>
 	</nav>
 
-	<section class="container mt-5">
+	<span id="home"></span>
+
+	<section class="mt-5 mb-3 pt-5 pb-4"> 
 		<div class="text-center">
 			<img src="img/watch.jpg" class="img-fluid mb-3 rounded-circle w-40" />
-			<h2>홍길동</h2>
+			<h2>이성헌</h2>
 			<img src="img/coffee.svg" class="img-fluid mb-2 d-inline" />
-			<p class="d-inline">커피</p>
-			<img src="img/play.svg" class="img-fluid mb-2 d-inline" />
-			<p class="d-inline">플레이</p>
+			<p class="d-inline">커피 &nbsp</p>
+			<img src="img/play.svg" class="img-fluid mt-1 mb-2 d-inline" />
+			<p class="d-inline">플레이 &nbsp</p>
 			<img src="img/thumbs-up.svg" class="img-fluid mb-2 d-inline" />
-			<p class="d-inline">Good</p>
+			<p class="d-inline" id="career">Good</p>
 		</div>
 	</section>
+	
+	<section class="bg-white text-dark mt-5 mb-3 pt-5 pb-5">	<!-- 패딩, 마진 -->
+		<div class="text-center">
+			<div class="container text-left mb-5" style="max-width: 400px;">
+				<h2>수상 경력</h2>
+				<ul>
+					<li>2018 올해의 인재상</li>
+					<li>2018 올해의 인재상</li>
+					<li>2018 올해의 인재상</li>
+					<li>2018 올해의 인재상</li>
+				</ul>
+			</div>
+			<div class="container text-left mb-5" style="max-width: 400px;">
+				<h2>활동 경력</h2>		
+				<ul>
+					<li>웹개발 학원</li>
+					<li>웹개발 학원</li>
+					<li>웹개발 학원</li>
+					<li id="portfolio">웹개발 학원</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<section class="mt-5 mb-3 pt-5 pb-4">
+		<div class="container">
+		<h2 class="text-center mb-5">포트폴리오</h2>
+			<div class="card-deck">
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오1</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오2</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오3</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			</div>
+			<div class="card-deck mb-3">
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오1</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오2</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img src="img/watch.jpg" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">포트폴리오3</h5>
+			      <p class="card-text">포트폴리오에 대한 설명입니다.</p>
+			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="bg-white text-dark mt-5 py-5" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2 class="mt-5">연락처</h2>
+					<div class="d-flex flex-row">
+						<div class="p-3 align-self-start">
+							<img src="img/check.svg" />
+						</div>
+						<div class="p-3 align-self-end" style="text-align: justify">
+							JSP 기반 웹 사이트 개발 문의
+						</div>
+					</div>
+					<div class="d-flex flex-row">
+						<div class="p-3 align-self-start">
+							<img src="img/check.svg" />
+						</div>
+						<div class="p-3 align-self-end" style="text-align: justify">
+							응용 프로그램 에플레이션 제작
+						</div>
+					</div>
+					<div class="d-flex flex-row">
+						<div class="p-3 align-self-start">
+							<img src="img/check.svg" />
+						</div>
+						<div class="p-3 align-self-end" style="text-align: justify">
+							DBMS 설계 및 구축
+						</div>
+					</div>
+					<div class="d-flex flex-row">
+						<div class="p-3 align-self-start">
+							<img src="img/check.svg" />
+						</div>
+						<div class="p-3 align-self-end" style="text-align: justify">
+							IOT 기반 애플리케이션 구현
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h2 class="mt-5">간편 문의</h2>
+					<form>
+					  <div class="form-group">
+					    <input type="text" class="form-control" id="userName" placeholder="이름">
+					  </div>
+					  <div class="form-group">
+					    <textarea placeholder="문의 내용" class="w-100" style="height: 100px; resize: none;"></textarea>
+					  </div>
+					  <div class="form-group form-check">
+					    <input type="checkbox" class="form-check-input" id="userAgree">
+					    <label class="form-check-label" for="userAgree">개인정보 활용에 동의합니다.</label>
+					  </div>
+					  <button type="submit" class="btn btn-primary btn-block">문의하기</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="bg-dark text-white text-center py-3">
+		<div class="container footer-above">
+			<div class="row">
+				<div class="col-lg">
+					<h2 class="text-white">위치</h2>
+					<p>회사 위치</p>
+				</div>
+				<div class="col-lg">
+					<h2 class="text-white">소셜 미디어</h2>
+					<button onclick="location.href='https://twitter.com'">트위터</button>
+					<button onclick="location.href='https://instagram.com'">인스타그램</button>
+					<button onclick="location.href='https://facebook.com'">페이스북</button>
+				</div>
+				<div class="col-lg">
+					<h2 class="text-white">개발자 한마디</h2>
+					<p>언제든지 연락주세요!</p>
+				</div>
+			</div>
+		</div>
+		<div class="container footer-below mt-4">
+			<p>Copyright &copy: 2020. 이성헌(Lee SungHeon)</p>
+		</div>
+	</footer>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$(".navbar-nav li a").click(function() {
+				$(".navbar-nav li").removeClass("active");
+				$(this).parent("li").addClass("active");
+				$(".navbar-nav li a").find("span").appendTo($(this));
+				let page = $(this).attr("href");
+				let pos = $(page).offset().top;
+ 				$('html, body').animate({"scrollTop": pos + "px"}, 500);
+			});
+		});
+	</script>
 </body>
 </html>
