@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin-left: 80px;
+    height: 700px;
+    width: 1200px;
+}
+
+nav {
+    height: 100px;
+    width: 1200px;
+}
+
+section {
+    height: 500px;
+    width: 1200px;
+}
+
+footer {
+    height: 100px;
+    width: 1200px;
+}
+
+nav .logo img {
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+
+.menuBar {
+    margin-top: 35px;
+    font-weight: 900;
+}
+
+.menuBar:first-child, .menuBar:nth-child(2), nav .menuBar:nth-child(3)
+{
+    border-right: 3px solid lightblue;
+}
+
+.menuBar:first-child {
+    margin-left: 150px;
+}
+
+nav li {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    line-height: 50px;
+    float: left;
+    background-color: #0076BE;
+    text-align: center;
+}
+
+.menuBar:hover {
+    background: #7776BE;
+    color: white;
+    cursor: pointer;
+}
+
+.subBar {
+    font-weight: 500;
+    display: none;
+}
+
+.subBar li {
+    background-color: wheat;
+    z-index: 2;
+}
+
+.subBar li:hover {
+    background-color: lightgray;
+}
+
+
+.imageSlide {
+    position: absolute;
+    width: calc(1200px*3);
+    height: 300px;
+}
+
+.imageSlide img {
+    height: 300px;
+    width: 1200px;
+}
+
+.imageSlide div {
+    float: left;
+    position: relative;
+}
+
+
+.content1 {
+    height: 300px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content2 {
+    height: 200px;
+    width: 400px;
+    float: left;
+}
+
+    .menuBox, .contentsBox {
+        position: relative;
+    }
+
+    .menuBox li {
+        margin-top:10px;
+        height: 40px;
+        width: 100px;
+        background-color: lightgrey;
+        position: relative;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        font-weight: 700;
+        border-radius: 10px 10px 0 0;
+    }
+    .menuBox li:hover {
+        background-color: gray;
+    }
+    .menuBox li:first-child {
+        border-right: 1px solid white;
+    }
+
+    .menuBox:after, .menuBox:before {
+        display: block;
+        content: "";
+    }
+
+    .menuBox:after {
+        clear: both;
+    }
+
+        .con1, .con2 {
+            height: 150px;
+            width: 400px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 150px;
+            text-align: center;
+            background-color: rgb(199, 194, 196);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .con2 {
+            display: none;
+        }
+            .contentsBox img {
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 130px;
+                width: 100px;
+            }
+    
+        .banner {
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .fileShort {
+            position: absolute;
+            margin-top: 10px;
+            width: 400px;
+            height: 190px;
+            background-color: limegreen;
+            display: inline-block;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 190px;
+        }
+
+footer .logo img {
+     height: 100px;
+     width: 200px;
+     float: left;
+        }
